@@ -1,0 +1,77 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 255, 255);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(54, 54, 54);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: rgb(138, 27, 140);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.display{
+    grid-column: 1 / -1;
+    word-break: break-all;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 32px;
+    margin: 10px 10px 20px;
+    background-color: rgb(33, 31, 33);
+    box-shadow: 0px 0px 0px 10px rgb(0, 0, 0, 0.2);
+}
+
+.numero-anterior{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.numero-actual{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 32px;
+    border: none;
+    background-color: rgb(138, 27, 140);
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.1), -5px -5px 15px 3px rgb(0, 0, 0, 0.1);
+}
+
+button:active{
+    background-color: rgb(113, 24, 115);
+}
+
+button:focus{
+    outline: none;
+}
+
+.btn-doble-espacio{
+    grid-column: span 2;
+}
